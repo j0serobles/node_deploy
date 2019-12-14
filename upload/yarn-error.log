@@ -1,0 +1,88 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js install
+
+PATH: 
+  C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Program Files (x86)\Yarn\bin\;C:\Users\jrrobles\AppData\Local\Microsoft\WindowsApps;C:\Users\jrrobles\AppData\Roaming\npm;C:\Users\jrrobles\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\heroku\bin;C:\Program Files\MongoDB\Server\4.2\bin;C:\Users\jrrobles\AppData\Local\Yarn\bin
+
+Yarn version: 
+  1.21.1
+
+Node version: 
+  10.16.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/rxjs/-/rxjs-5.5.12.tgz: ESOCKETTIMEDOUT
+      at ClientRequest.<anonymous> (C:\Program Files (x86)\Yarn\lib\cli.js:141292:19)
+      at Object.onceWrapper (events.js:286:20)
+      at ClientRequest.emit (events.js:198:13)
+      at TLSSocket.emitRequestTimeout (_http_client.js:662:40)
+      at Object.onceWrapper (events.js:286:20)
+      at TLSSocket.emit (events.js:198:13)
+      at TLSSocket.Socket._onTimeout (net.js:442:8)
+      at ontimeout (timers.js:436:11)
+      at tryOnTimeout (timers.js:300:5)
+      at listOnTimeout (timers.js:263:5)
+
+npm manifest: 
+  {
+    "name": "Gametable-application",
+    "version": "1.0.0",
+    "description": "Example code for deploying mongo course",
+    "repository": "https://github.com/synedra/node_deploy",
+    "main": "app.js",
+    "engines": {
+      "node": ">=7.0"
+    },
+    "scripts": {
+      "start": "node app.js",
+      "ng": "ng",
+      "postinstall": "node build.js",
+      "test": "node test.js",
+      "pree2e": "webdriver-manager update --standalone false --gecko false",
+      "e2e": "protractor"
+    },
+    "author": "Kirsten Hunter",
+    "license": "ISC",
+    "dependencies": {
+      "@angular-devkit/schematics": "0.0.40",
+      "@angular/animations": "^5.1.0",
+      "@angular/cli": "^1.6.0",
+      "@angular/common": "^5.1.0",
+      "@angular/compiler": "^5.1.0",
+      "@angular/compiler-cli": "^5.1.0",
+      "@angular/core": "^5.1.0",
+      "@angular/forms": "^5.1.0",
+      "@angular/http": "^5.1.0",
+      "@angular/platform-browser": "^5.1.0",
+      "@angular/platform-browser-dynamic": "^5.1.0",
+      "@angular/platform-server": "^5.1.0",
+      "@angular/router": "^5.1.0",
+      "angular2-moment": "^1.7.1",
+      "body-parser": "^1.18.2",
+      "codelyzer": "^4.0.1",
+      "core-js": "^2.4.1",
+      "cors": "^2.8.4",
+      "cross-var": "^1.1.0",
+      "express": "^4.16.2",
+      "karma": "^1.7.1",
+      "method-override": "^2.3.10",
+      "mocha": "^4.0.1",
+      "mongoose": "^4.13.6",
+      "rxjs": "^5.0.1",
+      "supertest": "^3.0.0",
+      "tape": "^4.8.0",
+      "ts-helpers": "^1.1.1",
+      "tslint": "^5.8.0",
+      "typescript": "2.4.2",
+      "zone.js": "^0.8.4"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
