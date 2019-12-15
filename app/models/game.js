@@ -7,7 +7,7 @@ const dbURI = process.env.MONGO_URL;
 var promise = mongoose.connect(dbURI, {
   useMongoClient: true,
   /* other options */
-});
+}).catch(error => handleError(error));
 
 mongoose.connection.on('connected', () => {
         console.log(`Mongoose connected to ${dbURI}`);
